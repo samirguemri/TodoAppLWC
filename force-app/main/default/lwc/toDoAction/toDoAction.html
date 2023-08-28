@@ -1,0 +1,12 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-quick-action-panel header="My action">
+        <c-task-editor lwc:ref='taskEditor' is-action={isAction}></c-task-editor>
+        <div slot="footer">
+            <lightning-button variant="neutral" label="Cancel" onclick={handleCancelClick}
+                class="slds-m-right_medium"></lightning-button>
+            <lightning-button variant="brand" label="Save" onclick={handleSaveClick}
+                class="slds-m-right_medium"></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

@@ -1,0 +1,19 @@
+{
+  "orgName": "samir company",
+  "edition": "Developer",
+  "description": "Todo App with LWC for learning purposes",
+  "language": "en_US",
+  "adminEmail": "samir.guemri@gmail.com",
+  "hasSampleData": false,
+  "features": [
+    "EnableSetPasswordInApi"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card variant="Narrow" title="New Task" icon-name="action:edit">
+        <div class="slds-p-horizontal_small">
+            <lightning-input type="text" name="taskValue" label="Enter new Task" value={taskValue}
+                onchange={handleInputChange} required>
+            </lightning-input>
+            <template lwc:if={showDate}>
+                <lightning-input type="date" name="dueDate" label="Choose due Date" value={dueDate}
+                    onchange={handleDateChange} required>
+                </lightning-input>
+            </template>
+            <br>
+            <template lwc:if={showSaveBtn}>
+                <lightning-button variant="success" label="Save new Task" title="Save new Task" onclick={handleClick}
+                    class="btn-color slds-m-around_small">
+                </lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>
